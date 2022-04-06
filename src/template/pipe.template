@@ -1,0 +1,8 @@
+import { {templateMainName}Pipe } from './{templateFileName}.pipe';
+
+describe('{templateMainName}Pipe', () => {
+  it('create an instance', () => {
+    const pipe = new {templateMainName}Pipe();
+    expect(pipe).toBeTruthy();
+  });
+});

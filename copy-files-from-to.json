@@ -1,0 +1,55 @@
+{
+    "copyFiles": [{
+            "from": "/src/template-ng-mocks/component.template",
+            "to": "angular-spec-test-generator/template-ng-mocks/component.template"
+        },
+        {
+            "from": "/src/template-ng-mocks/directive.template",
+            "to": "angular-spec-test-generator/template-ng-mocks/directive.template"
+        },
+        {
+            "from": "/src/template-ng-mocks/guard.template",
+            "to": "angular-spec-test-generator/template-ng-mocks/guard.template"
+        },
+        {
+            "from": "/src/template-ng-mocks/pipe.template",
+            "to": "angular-spec-test-generator/template-ng-mocks/pipe.template"
+        },
+        {
+            "from": "/src/template-ng-mocks/service.template",
+            "to": "angular-spec-test-generator/template-ng-mocks/service.template"
+        },
+        {
+            "from": "/src/template/component.template",
+            "to": "angular-spec-test-generator/template/component.template"
+        },
+        {
+            "from": "/src/template/directive.template",
+            "to": "angular-spec-test-generator/template/directive.template"
+        },
+        {
+            "from": "/src/template/guard.template",
+            "to": "angular-spec-test-generator/template/guard.template"
+        },
+        {
+            "from": "/src/template/pipe.template",
+            "to": "angular-spec-test-generator/template/pipe.template"
+        },
+        {
+            "from": "/src/template/service.template",
+            "to": "angular-spec-test-generator/template/service.template"
+        },
+        {
+            "from": "package.json",
+            "to": "angular-spec-test-generator/package.json"
+        },
+        {
+            "from": "LICENSE.txt",
+            "to": "angular-spec-test-generator/LICENSE.txt"
+        },
+        {
+            "from": "README.md",
+            "to": "angular-spec-test-generator/README.md"
+        }
+    ]
+}

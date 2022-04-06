@@ -1,0 +1,49 @@
+{
+    "name": "angular-spec-test-generator",
+    "version": "1.0.0",
+    "description": "generate angular spec files with ng-mocks by cli.",
+    "author": "Jose Mendez",
+    "main": " ./index.js",
+    "bin": {
+        "angular-spec-test-generator": "./index.js"
+    },
+    "scripts": {
+        "delete": "rm -rf dist",
+        "remove.build": "rm -rf ./angular-spec-test-generator",
+        "clean": "rm -rf package-lock.json node_modules",
+        "build": " npm run build.ts && npm run tslint",
+        "build.prod": "npm run remove.build && tsc -p tsconfig.prod.json --removeComments && npm run copy.files",
+        "build.ts": "tsc --removeComments",
+        "watch.ts": "tsc --removeComments -w",
+        "tslint": "tslint -c tslint.json -p tsconfig.json",
+        "prebuild.deploy": "npm run build:prod",
+        "build.deploy": "npm run minify",
+        "deploy": "cd angular-spec-test-generator && npm publish",
+        "copy.files": "copy-files-from-to",
+        "link": "npm link ./angular-spec-test-generator/",
+        "tsc": "tsc -v"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jomendez/angular-spec-test-generator"
+    },
+    "homepage": "https://github.com/jomendez/angular-spec-test-generator",
+    "bugs": {
+        "url": "https://github.com/jomendez/angular-spec-test-generator/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "clear": "0.1.0",
+        "string-template": "^1.0.0",
+        "typescript": "^4.6.3"
+    },
+    "devDependencies": {
+        "@angular-devkit/core": "^13.3.1",
+        "@angular-devkit/schematics": "^13.3.1",
+        "@schematics/angular": "^11.0.1",
+        "@types/node": "^11.10.4",
+        "copy-files-from-to": "^3.2.2",
+        "tslint": "^5.13.1"
+    }
+}
