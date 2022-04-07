@@ -31,6 +31,8 @@ export const createSpec = async (array: SpecType[], isforce: boolean) => {
       let moduleImport = '';
       if (relativePathToModule && moduleToIncliude) {
         moduleImport = `import { ${moduleToIncliude} } from './${relativePathToModule.slice(0, -3)}';`;
+      } else {
+        console.log(chalk.yellow(`Not able to create module import for module '${moduleToIncliude}' and path '${relativePathToModule}'`));
       }
 
       const fileNameWithoutTypeName = file.name.replace(`.${file.type}`, '');

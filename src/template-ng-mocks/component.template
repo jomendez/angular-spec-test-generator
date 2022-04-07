@@ -20,6 +20,6 @@ describe('{templateMainName}Component', () => {
   it('should create', () => {
     expect(fixture.point.componentInstance).toEqual(jasmine.any({templateMainName}Component));;
   });
-  {templateItFromMethods}
+{templateItFromMethods}
 });
 
